@@ -373,7 +373,7 @@ export default function Home() {
         <section className="flex flex-col md:flex-row items-center justify-between gap-8 mb-20">
           <div className="md:w-1/2 space-y-4">
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Hello, I'm Dassi Dieudonne
+              Hello, I am  Dassi Dieudonne
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold">
               Front-End Developer
@@ -412,11 +412,11 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             <div className="space-y-4">
               <p className="text-slate-300 leading-relaxed">
-                I'm <span className="text-cyan-400 font-medium">Dassi Dieudonne</span>, a passionate <span className="text-blue-400">Front-End Developer</span> specializing in <span className="text-purple-400">React</span>, <span className="text-amber-400">Next.js</span>, and <span className="text-green-400">TypeScript</span>. I build performant web applications with <span className="text-red-400">Firebase</span> backends and <span className="text-cyan-400">Tailwind CSS</span>, delivering seamless user experiences that solve real business problems.
+                I am <span className="text-cyan-400 font-medium">Dassi Dieudonne</span>, a passionate <span className="text-blue-400">Front-End Developer</span> specializing in <span className="text-purple-400">React</span>, <span className="text-amber-400">Next.js</span>, and <span className="text-green-400">TypeScript</span>. I build performant web applications with <span className="text-red-400">Firebase</span> backends and <span className="text-cyan-400">Tailwind CSS</span>, delivering seamless user experiences that solve real business problems.
               </p>
 
               <p className="text-slate-300 leading-relaxed">
-                As a lifelong learner, I constantly enhance my skills to stay at technology's cutting edge. Currently expanding my expertise into backend development with <span className="text-emerald-400">Node.js</span> and <span className="text-gray-400">Express.js</span>, while maintaining a strong focus on creating <span className="italic">type-safe, scalable frontend architectures</span>.
+                As a lifelong learner, I constantly enhance my skills to stay at technologys cutting edge. Currently expanding my expertise into backend development with <span className="text-emerald-400">Node.js</span> and <span className="text-gray-400">Express.js</span>, while maintaining a strong focus on creating <span className="italic">type-safe, scalable frontend architectures</span>.
               </p>
             </div>
 
@@ -501,12 +501,12 @@ export default function Home() {
             <div className="space-y-6">
               <p className="text-slate-300 leading-relaxed">
                 Feel free to reach out and discover how I can bring value to your team! With a passion for front-end
-                development and a keen eye for design, I'm committed to delivering solutions that not only meet but exceed
+                development and a keen eye for design, I am committed to delivering solutions that not only meet but exceed
                 expectations.
               </p>
               <p className="text-slate-300 leading-relaxed">
-                Let's connect and explore how my skills and experience align with your company's goals. Drop me a message
-                below, and let's take the first step towards building something great together!
+                Let us connect and explore how my skills and experience align with your company goals. Drop me a message
+                below, and let us take the first step towards building something great together!
               </p>
               <div className="mt-8">
                 <h4 className="text-xl font-semibold mb-4">SOCIAL MEDIA:</h4>
