@@ -63,7 +63,7 @@ export default function Navbar() {
               CONTACT
             </Link>
             <Link 
-              href="https://docs.google.com/document/d/1wVRUXOo3gmSLZtWxaHyPEeus11QWEjMWdPkPKK6wcAE/edit?usp=sharing"
+              href="https://drive.google.com/file/d/1f0Ex0ArX2NEcBwAmRacsBR_F0GiOyS_N/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="ml-2 px-4 py-2 rounded-md text-sm font-bold bg-amber-500 text-slate-900 hover:bg-amber-600 transition-colors"
