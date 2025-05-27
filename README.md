@@ -76,12 +76,3 @@ The contact form uses EmailJS to send messages directly to my email.
 
 
 
-
-## 📃 License
-
-This project is open-source and free to use under the [MIT License](LICENSE).
-
----
-
-Let me know if you'd like this in `.docx` or `.pdf` format — I can generate and export it for you.
-
