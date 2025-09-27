@@ -2,6 +2,7 @@
 import gym from '../images/gymnastic.jpg'
 import beauty from '../images/barber.jpg'
 import school from '../images/education.png'
+import dashboard from '../images/dashboard.png'
 import dentist from '../images/dentacare.png'
 import Link from 'next/link'
 
@@ -23,6 +24,11 @@ const projectBox = [
         role:"As a frontend developer, I designed and developed an intuitive interface for the gym management platform, ensuring a seamless and engaging user experience. I built responsive layouts, optimized navigation, and implemented real-time data updates using Firebase. Leveraging Firebase's backend services, I integrated user authentication, profile management, booking functionalities, and direct messaging between clients and coaches. Additionally, I ensured that the UI was fully optimized for both desktop and mobile devices, enhancing accessibility and usability.",
         tech:"Next.js Typescript TailwindCss Firebase"
     },
+
+
+
+
+
 
 
 
@@ -60,6 +66,26 @@ const projectBox = [
 
 
     },
+
+
+
+ {
+        id: 4,
+        name:"EduCrisis Dashboard",
+        image:dashboard,
+        industry:"Humanitarian Data Visualization / Education Monitoring",
+        projet:"Web App",
+        github:"https://github.com/dascomsoft/educrisis",
+        link:"educrisis.vercel.app/",
+        role:"As a Frontend Developer : I Designed and built a modular interface with Next.js and React, Integrated Leaflet for mapping and Chart.js for data visualization ,Structured the project with a clean architecture (services, components, public/data) , Styled the application with TailwindCSS for a professional, responsive look and documented the project to make it portfolio-ready and reusable for other developers or organizations.",
+        problem:"In Cameroon, humanitarian actors and education stakeholders often lack a centralized tool to visualize school infrastructures and track enrollment indicators.Existing data (from OpenStreetMap and the World Bank) is scattered and not easily accessible.NGOs and decision-makers struggle to quickly identify the distribution of schools, their types (kindergartens, primary/secondary, colleges, universities), and the evolution of enrollment rates.",
+        solution:"I developed an interactive dashboard that consolidates these datasets into a modern, intuitive interface:Dynamic KPIs: total schools, breakdown by type.,Interactive Leaflet Map: ~2,350 geolocated schools with details (name, type, city).,Chart.js Visualization: evolution of Cameroon’s net primary school enrollment rate (World Bank API).,Modern responsive design: TailwindCSS, styled cards, impactful colors.,this solution transforms raw data into actionable visual insights, empowering NGOs, policymakers, and recruiters to quickly understand the educational landscape. 🚀",
+        tech:"Next.js  React  TailwindCSS  Leaflet  Chart.js)"
+
+
+    }
+
+
  
 ]
 
