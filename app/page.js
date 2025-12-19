@@ -66,7 +66,7 @@ export default function Home() {
               Hello, I am  Dassi Dieudonne
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold">
-              Front-End Developer
+              Front-End Engineer Developer
             </h2>
             <p className="text-slate-300 max-w-lg">
               <span className="font-medium text-white">Specializing in</span>{" "}
