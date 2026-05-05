@@ -45,13 +45,13 @@ export default function ProjectDetails({ params }) {
             alt={project.name}
           />
 
-          <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent flex items-end p-10">
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex items-end p-10">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold">
                 {project.name}
               </h1>
               <p className="text-slate-300 mt-2">
-                Case Study Overview
+                {project.projet} • {project.industry}
               </p>
             </div>
           </div>
@@ -60,61 +60,43 @@ export default function ProjectDetails({ params }) {
         {/* CONTENT */}
         <div className="mt-14 space-y-14">
 
-          {/* INDUSTRY */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-cyan-400 text-xs uppercase tracking-[0.3em]">
-              Industry
-            </h2>
-            <p className="text-slate-200 mt-2 text-lg">
-              {project.industry}
-            </p>
-          </motion.div>
-
           {/* PROBLEM */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-cyan-400 text-xs uppercase tracking-[0.3em]">
-              Problem
-            </h2>
-            <p className="text-slate-300 mt-3 leading-relaxed">
-              {project.problem}
-            </p>
-          </motion.div>
+          <Section title="Problem" content={project.problem} />
 
           {/* SOLUTION */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-cyan-400 text-xs uppercase tracking-[0.3em]">
-              Solution
-            </h2>
-            <p className="text-slate-300 mt-3 leading-relaxed">
-              {project.solution}
-            </p>
-          </motion.div>
+          <Section title="Solution" content={project.solution} />
 
           {/* ROLE */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-cyan-400 text-xs uppercase tracking-[0.3em]">
-              My Role
-            </h2>
-            <p className="text-slate-300 mt-3 leading-relaxed">
-              {project.role}
-            </p>
-          </motion.div>
+          <Section title="My Role" content={project.role} />
+
+          {/* IMPACT 🔥 (NEW IMPORTANT) */}
+          {project.impact && (
+            <Section title="Impact" content={project.impact} highlight />
+          )}
+
+          {/* TECH STACK 🔥 */}
+          {project.tech && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <h2 className="text-cyan-400 text-xs uppercase tracking-[0.3em] mb-4">
+                Tech Stack
+              </h2>
+
+              <div className="flex flex-wrap gap-3">
+                {project.tech.split(" ").map((tech, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 bg-slate-800 border border-slate-700 rounded-full text-sm text-slate-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          )}
 
           {/* ACTION BUTTONS */}
           <motion.div
@@ -158,5 +140,28 @@ export default function ProjectDetails({ params }) {
         </div>
       </div>
     </div>
+  );
+}
+
+/* 🔥 REUSABLE SECTION COMPONENT */
+function Section({ title, content, highlight }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+    >
+      <h2 className="text-cyan-400 text-xs uppercase tracking-[0.3em]">
+        {title}
+      </h2>
+
+      <p
+        className={`mt-3 leading-relaxed ${
+          highlight ? "text-white font-medium" : "text-slate-300"
+        }`}
+      >
+        {content}
+      </p>
+    </motion.div>
   );
 }
